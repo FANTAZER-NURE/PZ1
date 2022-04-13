@@ -1,8 +1,15 @@
 
 
 /*# sourceMappingURL=styles.scss.map */
+@import "./normalize.css";
 
 
-h1 {
-  color: red;
+.page {
+
+  padding: 50px;
+  text-align: center;
+
+  .title {
+    margin: 0 auto;
+  }
 }
