@@ -9,7 +9,24 @@
   padding: 50px;
   text-align: center;
 
-  .title {
+  &__title {
     margin: 0 auto;
+  }
+
+  &__table{
+    border-collapse:collapse;
+    border: 3px soid #e5e5e5;
+    background: #eee;
+  }
+
+  & input {
+    // width: 50%;
+  }
+
+  & td {
+    border: 1px solid #333;
+  }
+
+  & th {
   }
 }

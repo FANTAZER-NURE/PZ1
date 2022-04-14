@@ -4,8 +4,16 @@
   padding: 50px;
   text-align: center;
 }
-.page .title {
+.page__title {
   margin: 0 auto;
+}
+.page__table {
+  border-collapse: collapse;
+  border: 3px soid #e5e5e5;
+  background: #eee;
+}
+.page td {
+  border: 1px solid #333;
 }
 
 /*# sourceMappingURL=styles.css.map */
