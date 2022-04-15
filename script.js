@@ -82,12 +82,34 @@ formTable.addEventListener("submit", (event)=>{
   }
   console.log(firstResult);
 
+  let page = document.querySelector('.page__answer');
+  console.log(page);
+  page.className = 'page__answer--opened';
+  document.querySelector('.page__text--1').textContent = firstResult;
 });
 
 
 
 
-
+// for (let i = 1; i < 4; i++){
+  //   tableMap.set(`a${i}u`);
+  //   tableMap.set(`b${i}v`);
+  // }
+  // tableMap.set('a1u', 0);
+  // for (let key of tableMap.keys()){
+  //   let substrForU = key.substring(0, 2);
+  //   let substrForV = key.substring(2);
+  //   if(smallMap.get(key) && tableMap2.get(key)){
+  //     if(tableMap.get(`${substrForU}u`) != undefined){
+  //       tableMap.set(`${substrForV}v`, tableMap.get(key) - tableMap.get(`${substrForU}u`));
+  //     }
+  //     else if(tableMap.get(`${substrForV}v`) != undefined){
+  //       tableMap.set(`${substrForU}u`, tableMap.get(key) - tableMap.get(`${substrForV}v`));
+  //     }
+  //   }
+  // }
+  
+  // console.log(tableMap);
 
 
 

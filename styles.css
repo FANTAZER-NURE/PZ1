@@ -16,4 +16,11 @@
   border: 1px solid #333;
 }
 
+.page__answer{
+  display: none;
+
+}
+.page__answer--opened{
+  display: block;
+}
 /*# sourceMappingURL=styles.css.map */
