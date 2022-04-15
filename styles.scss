@@ -19,14 +19,17 @@
     background: #eee;
   }
 
-  & input {
-    // width: 50%;
-  }
-
   & td {
     border: 1px solid #333;
   }
 
-  & th {
+  &__answer {
+    display: none;
   }
+
+  &__answer--opened {
+    display: block;
+  }
+
+ 
 }

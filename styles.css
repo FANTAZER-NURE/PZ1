@@ -15,12 +15,11 @@
 .page td {
   border: 1px solid #333;
 }
-
-.page__answer{
+.page__answer {
   display: none;
-
 }
-.page__answer--opened{
+.page__answer--opened {
   display: block;
 }
+
 /*# sourceMappingURL=styles.css.map */
