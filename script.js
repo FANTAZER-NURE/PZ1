@@ -76,8 +76,6 @@ formTable.addEventListener("submit", (event)=>{
 
   console.log(smallMap);
 
-  
-
 });
 
 
