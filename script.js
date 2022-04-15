@@ -76,6 +76,12 @@ formTable.addEventListener("submit", (event)=>{
 
   console.log(smallMap);
 
+  let firstResult = 0;
+  for (let key of smallMap.keys()) {
+    firstResult = tableMap.get(key)*smallMap.get(key) + firstResult;
+  }
+  console.log(firstResult);
+
 });
 
 
