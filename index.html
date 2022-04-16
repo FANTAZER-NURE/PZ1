@@ -10,14 +10,18 @@
 </head>
 <body>
   <main class="page">
-    <h3 class="page__title">ЗАДАЧІ ЛІНІЙНОГО ПРОГРАМУВАННЯ. ПОСТАНОВКА ТА ФОРМИ
-      ЗАПИСУ ЗАДАЧ ЛІНІЙНОГО ПРОГРАМУВАННЯ (ЗЛП)
+    <h3 class="page__title">Вирішення задачі транспортної системи(на мінімум)
     </h3>
+
+    <p class="page__text text">Введіть ціну доставки від кожного складу до точки реалізації, потребу на кожній точці реалізації, та запас товару на складах</p>
+
     <form class="page__form" name="form"
     id="form"> 
       <table class="page__table">
         <caption class="page__caption">
           Введіть невід'ємні числа.
+          <br>
+          Сума потреб та сума запасів має бути рівною(задача закритого типу)
         </caption>
         <tr>
           <th rowspan="2">Постачальник</th>
@@ -64,18 +68,20 @@
         </tr>
       </table>
 
-      <button type="submit" form="form" id="submit">submit</button>
+      <button type="submit" class="button" form="form" id="submit">
+        <span class="transition"></span>
+        <span class="label button-text">Вирішити</span>
+      </button>
 
-      
     </form>
 
     <div class="page__answer">
-      <p class = "page__text">
+      <h4 class = "page__text">
         Відповідь: 
-      </p>
-      <p class = "page__text--1">
+      </h4>
+      <h5 class = "page__text page__text--1">
         
-      </p>
+      </h5>
     </div>
 
   </main>

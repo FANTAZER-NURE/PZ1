@@ -46,6 +46,7 @@ formTable.addEventListener("submit", (event)=>{
 
   if(zSum !== pSum) {
     alert('сумма потреб та запасу має бути однакова!');
+    location.reload()
   } else {
     let tableMap2 = tableMap;
 

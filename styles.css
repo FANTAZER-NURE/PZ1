@@ -4,22 +4,133 @@
   padding: 50px;
   text-align: center;
 }
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .page {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .page {
+    padding: 20px;
+  }
+}
 .page__title {
   margin: 0 auto;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .page__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .page__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
+.page__text {
+  margin-bottom: 30px;
+  display: inline-block;
+  font-size: 24px;
+}
+.page__text--1 {
+  display: inline-block;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .page__text {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .page__text {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
 }
 .page__table {
+  table-layout: fixed;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
   border-collapse: collapse;
-  border: 3px soid #e5e5e5;
-  background: #eee;
+  border: 3px solid #344f10;
+  color: #344f10;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 10px;
 }
-.page td {
-  border: 1px solid #333;
+.page__caption {
+  margin-bottom: 20px;
+  color: #344f10;
+}
+.page th, .page td {
+  padding: 5px;
+}
+.page input {
+  background: #e4dfd3;
+  width: 100%;
+  color: #344f10;
 }
 .page__answer {
   display: none;
 }
 .page__answer--opened {
   display: block;
+}
+
+.transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: #e4dfd3;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  margin: 0 auto;
+  width: 30%;
+  background: #333;
+  border: 1px solid #333;
+  position: relative;
+  overflow: hidden;
+  color: #f2f2f2;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  margin-bottom: 15px;
+}
+.button:hover {
+  color: #333;
+}
+.button:hover .transition {
+  width: 120%;
+  height: 120%;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .button {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .button {
+    font-size: 14px;
+    width: 70%;
+  }
+}
+
+.label {
+  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */
