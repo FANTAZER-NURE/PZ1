@@ -81,7 +81,12 @@
     font-size: 16px;
     line-height: 150%;
     margin-bottom: 10px;
+    border-radius: 10px;
 
+  }
+
+  & tbody {
+    border-radius: 10px;
   }
 
   &__caption {
@@ -97,6 +102,8 @@
     background: #e4dfd3;
     width: 100%;
     color: #344f10;
+    border-radius: 10px;
+    height: 100%;
   }
 
   &__answer {
@@ -120,6 +127,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 9999px;
 }
 
 .button {

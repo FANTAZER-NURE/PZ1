@@ -63,6 +63,10 @@
   font-size: 16px;
   line-height: 150%;
   margin-bottom: 10px;
+  border-radius: 10px;
+}
+.page tbody {
+  border-radius: 10px;
 }
 .page__caption {
   margin-bottom: 20px;
@@ -75,6 +79,8 @@
   background: #e4dfd3;
   width: 100%;
   color: #344f10;
+  border-radius: 10px;
+  height: 100%;
 }
 .page__answer {
   display: none;
@@ -93,6 +99,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 9999px;
 }
 
 .button {
