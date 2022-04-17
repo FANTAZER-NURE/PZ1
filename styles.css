@@ -4,6 +4,12 @@
   padding: 50px;
   text-align: center;
 }
+.page--main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
 @media screen and (min-width: 640px) and (max-width: 999px) {
   .page {
     padding: 30px;
@@ -13,6 +19,10 @@
   .page {
     padding: 20px;
   }
+}
+.page__container {
+  display: flex;
+  gap: 10px;
 }
 .page__title {
   margin: 0 auto;
@@ -29,6 +39,15 @@
     font-size: 24px;
     margin-bottom: 15px;
   }
+}
+.page__names {
+  justify-self: end;
+  align-self: end;
+  text-align: right;
+}
+.page__topic {
+  width: 60%;
+  margin: 0 auto;
 }
 .page__text {
   margin-bottom: 30px;
@@ -62,8 +81,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   border-radius: 10px;
+}
+.page__link {
+  color: #344f10;
 }
 .page tbody {
   border-radius: 10px;
@@ -116,6 +138,7 @@
   align-items: center;
   transition: all 0.2s ease-in;
   margin-bottom: 15px;
+  border-radius: 50px;
 }
 .button:hover {
   color: #333;

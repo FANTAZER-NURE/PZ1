@@ -9,6 +9,10 @@ body {
   background: #e4dfd3;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;

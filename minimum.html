@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./hnure-logo.png">
+  <title>МОТДО</title>
+</head>
+<body>
+  <main class="page">
+    <h3 class="page__title">Вирішення задачі транспортної системи(на мінімум)
+    </h3>
+
+    <p class="page__text text">Введіть ціну доставки від кожного складу до точки реалізації, потребу на кожній точці реалізації, та запас товару на складах</p>
+
+    <form class="page__form" name="form"
+    id="form"> 
+      <table class="page__table">
+        <caption class="page__caption">
+          Введіть невід'ємні числа.
+          <br>
+          Сума потреб та сума запасів має бути рівною(задача закритого типу)
+        </caption>
+        <tr>
+          <th rowspan="2">Постачальник</th>
+          <th colspan="3">Споживач</th>
+          <th rowspan="2">Запас</th>
+        </tr>
+        <tr>
+          <th>B1</th>
+          <th>В2</th>
+          <th>В3</th>
+        </tr>
+      
+        <tr>
+          <th>А1</th>
+          <td><input type="number" required id="a1b1"></td>
+          <td><input type="number" required id="a1b2"></td>
+          <td><input type="number" required id="a1b3"></td>
+          <td><input type="number" required id="a1z"></td>
+        </tr>
+      
+      
+        <tr>
+          <th>А2</th>
+          <td><input type="number" required id="a2b1"></td>
+          <td><input type="number" required id="a2b2"></td>
+          <td><input type="number" required id="a2b3"></td>
+          <td><input type="number" required id="a2z"></td>
+        </tr>
+      
+      
+        <tr>
+          <th>А3</th>
+          <td><input type="number" required id="a3b1"></td>
+          <td><input type="number" required id="a3b2"></td>
+          <td><input type="number" required id="a3b3"></td>
+          <td><input type="number" required id="a3z"></td>
+        </tr>
+      
+        <tr>
+          <th>Потреба</th>
+          <td><input type="number" required id="b1p"></td>
+          <td><input type="number" required id="b2p"></td>
+          <td><input type="number" required id="b3p"></td>
+        </tr>
+      </table>
+
+      <button type="submit" class="button" form="form" id="submit">
+        <span class="transition"></span>
+        <span class="label button-text">Вирішити</span>
+      </button>
+
+    </form>
+
+    <div class="page__answer">
+      <h4 class = "page__text">
+        Відповідь: 
+      </h4>
+      <h5 class = "page__text page__text--1">
+        
+      </h5>
+    </div>
+
+    <a type="submit" href="./index.html" class="button">
+      <span class="transition"></span>
+      <span class="label button-text">На Головну</span>
+    </a>
+
+  </main>
+
+  <script defer type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>
